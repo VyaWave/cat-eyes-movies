@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "browser-sync": "registry:dt/browser-sync#0.0.0+20161119044246",
+    "lodash": "registry:npm/lodash#4.0.0+20161015015725"
+  },
+  "globalDependencies": {
+    "mocha": "registry:dt/mocha#2.2.5+20170204022515",
+    "node": "registry:dt/node#7.0.0+20170204020307",
+    "require": "registry:dt/require#2.1.20+20160919185614",
+    "systemjs": "registry:dt/systemjs#0.20.5+20170220224323"
+  }
+}

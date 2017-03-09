@@ -4,12 +4,11 @@ import Vue from 'vue'
 import App from './app/App'
 import router from './router'
 // import Component from 'vue-class-component'
+Vue.config.productionTip = false
 
 /**
  * 此处为入口文件
  */
-
-Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
@@ -18,3 +17,14 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+// @Component({
+//   router,
+//   template: '<App/>',
+//   components: { App }
+// })
+
+// export class AppView extends Vue {
+//   name = 'appView'
+// }
+// export default new AppView()

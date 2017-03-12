@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './app/App'
 import router from './router'
-// import Component from 'vue-class-component'
+import Component from 'vue-class-component'
 Vue.config.productionTip = false
 
 /**
@@ -11,20 +11,17 @@ Vue.config.productionTip = false
  */
 
 /* eslint-disable no-new */
-new Vue({
-  el: '#app',
+
+@Component({
   router,
   template: '<App/>',
   components: { App }
 })
 
-// @Component({
-//   router,
-//   template: '<App/>',
-//   components: { App }
-// })
+export class AppView extends Vue {
+  name = 'appView'
+}
 
-// export class AppView extends Vue {
-//   name = 'appView'
-// }
-// export default new AppView()
+export default new AppView({
+  el: '#app'
+})

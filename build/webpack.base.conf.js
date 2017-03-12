@@ -47,6 +47,11 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+        test: /\.html$/,
+        loader: 'html-loader',
+        //include: [path.resolve(__dirname, "src/components")]
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         query: {

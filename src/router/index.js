@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/hello/Hello'
-import Start from '@/components/start/appStart'
+import StartView from '@/components/start/index'
+import MoviesList from '@/components/movies/index'
 
 Vue.use(Router)
 
@@ -15,11 +16,16 @@ export default new Router({
     {
       path: '/start',
       name: 'start',
-      component: Start
+      component: StartView
     },
     {
       path: '/',
       redirect: '/start'
+    },
+    {
+      path: '/movies',
+      name: 'movies',
+      component: MoviesList
     }
   ]
 })

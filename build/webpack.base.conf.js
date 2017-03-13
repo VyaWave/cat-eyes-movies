@@ -50,6 +50,11 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader',
         //include: [path.resolve(__dirname, "src/components")]
+        // 用于处理 components 文件下 template.html
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

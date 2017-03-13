@@ -1,13 +1,11 @@
 import Component from 'vue-class-component'
 import Vue from 'Vue'
-import './style.css'
+import './style.scss'
 
 @Component({
   template: require('./template.html')
 })
 
-export class StartView extends Vue {
+export default class StartView extends Vue {
   // ..
 }
-
-export default StartView

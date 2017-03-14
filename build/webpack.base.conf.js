@@ -53,7 +53,7 @@ module.exports = {
         // 用于处理 components 文件下 template.html
       },
       {
-        test: /\.scss$/,
+        test: /\.sass$/,
         loader: 'style!css!sass'
       },
       {

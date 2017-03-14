@@ -1,55 +1,55 @@
-  .app-start-view {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    background: #ef1010;
-    color: white;
-    flex-direction: column
-  }
-  .logo {
-    width: 100px;
-    height: 100px;
-    animation: topDown 1s infinite cubic-bezier(0.51, 0.47, 0.32, 0.59);
-    position: relative
-  }
-  .font {
-    font-size: 16px;
-    line-height: 40px
-  }
+.app-start-view {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background: #ef1010;
+  color: white;
+  flex-direction: column
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  animation: topDown 1s infinite cubic-bezier(0.51, 0.47, 0.32, 0.59);
+  position: relative
+}
+.font {
+  font-size: 16px;
+  line-height: 40px
+}
 
-  @keyframes topDown {
-    0% {
-      transform: translateY(10px)
-    }
-    10% {
-      transform: translateY(-10px)
-    }
-    20% {
-      transform: translateY(-20px)
-    }
-    30% {
-      transform: translateY(-30px)
-    }
-    40% {
-      transform: translateY(-40px)
-    }
-    50% {
-      transform: translateY(-50px)
-    }
-    60% {
-      transform: translateY(-40px)
-    }
-    70% {
-      transform: translateY(-30px)
-    }
-    80% {
-      transform: translateY(-20px)
-    }
-    90% {
-      transform: translateY(-10px)
-    }
-    100% {
-      transform: translateY(10px)
-    }
+@keyframes topDown {
+  0% {
+    transform: translateY(10px)
   }
+  10% {
+    transform: translateY(-10px)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+  30% {
+    transform: translateY(-30px)
+  }
+  40% {
+    transform: translateY(-40px)
+  }
+  50% {
+    transform: translateY(-50px)
+  }
+  60% {
+    transform: translateY(-40px)
+  }
+  70% {
+    transform: translateY(-30px)
+  }
+  80% {
+    transform: translateY(-20px)
+  }
+  90% {
+    transform: translateY(-10px)
+  }
+  100% {
+    transform: translateY(10px)
+  }
+}

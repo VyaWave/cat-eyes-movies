@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/hello/Hello'
-import StartView from '@/components/start/index'
-import MoviesList from '@/components/movies/index'
+import Hello from '@/views/hello/Hello'
+import StartView from '@/views/start/index'
+import MoviesList from '@/views/movies/index'
 
 Vue.use(Router)
 

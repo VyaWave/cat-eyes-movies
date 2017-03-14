@@ -12,8 +12,13 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs"
   },
   "dependencies": {
+    "axios": "^0.15.3",
+    "dns": "^0.2.2",
+    "fetch": "^1.1.0",
+    "net": "^1.0.2",
     "vue": "^2.2.1",
-    "vue-router": "^2.2.0"
+    "vue-router": "^2.2.0",
+    "vuex": "^2.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

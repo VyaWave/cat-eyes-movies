@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './app/App'
 import router from './router'
 import Component from 'vue-class-component'
+
 Vue.config.productionTip = false
 
 /**
@@ -12,8 +13,11 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 
+import store from './store/store'
+
 @Component({
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

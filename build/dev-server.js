@@ -8,6 +8,7 @@ if (!process.env.NODE_ENV) {
 var opn = require('opn')
 var path = require('path')
 var express = require('express')
+var fs = require('fs')
 var webpack = require('webpack')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = process.env.NODE_ENV === 'testing'
@@ -69,6 +70,12 @@ var uri = 'http://localhost:' + port
 devMiddleware.waitUntilValid(function () {
   console.log('> Listening at ' + uri + '\n')
 })
+
+var mockDir = path.resolve(__dirname, '../mock');
+fs.readdirSync(mockDir).forEach(function (file) {
+  var mock = require(path.resolve(mockDir, file));
+  app.use(mock.api, mock.response);
+});
 
 module.exports = app.listen(port, function (err) {
   if (err) {

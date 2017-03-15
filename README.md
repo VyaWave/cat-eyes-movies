@@ -1,6 +1,9 @@
 # cat-eyes-movies
 
-> A Vue.js project
+> A Vue2.0 project
+```
+  Vuejs2.0 + Vuex + VueRouter + Es6 + fetch + axios + Promise
+```
 
 ## Build Setup
 

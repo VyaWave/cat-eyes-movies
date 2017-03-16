@@ -32,16 +32,19 @@ export default {
   flex: 1
 }
 .navigator {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
   position: absolute;
-  top: 0;
-  right:0;
-  left:0;
+  height: 40px;
   bottom: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  list-sytle:none;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight:800;
+  font-style: oblique;
   }
   a {
     color: #7effc6;

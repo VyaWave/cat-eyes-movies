@@ -23,4 +23,7 @@ export default class MoviesList extends Vue {
   created () {
     this.getlist()
   }
+  bindEvent () {
+    console.log('绑定方法写在这里')
+  }
 }

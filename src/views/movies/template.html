@@ -1,8 +1,52 @@
 <section class="movies-list-view">
-  <span class="title" @click="bindEvent">
-    猫眼电影首页
-    {{loading}}
-    {{test}}
-  </span>
+  <div class="header">
+    <!--顶部导航-->
+    <div class="location">
+      上海
+    </div>
+    <div class="category">
+      <span class="types active">
+        热映
+      </span>
+      <span class="types">
+        待映
+      </span>
+    </div>
+    <div class="search">搜索</div>
+  </div>
+  <!--电影列表-->
+  <div class="movies-list">
+    <div class="movie-item" v-for="movieItem in movies">
+      <div class="left">
+        <img :src="movieItem.img"/>
+      </div>
+      <div class="center">
+        <span class="movie-name ellipsis">
+          {{movieItem.nm}}
+            <span class="movie-tag" v-if="movieItem.imax">
+           <!--<b v-if="{{moviItem.3d}}">3D</b>-->
+           <b v-if="movieItem.imax">IMAX</b>
+            </span>
+        </span>
+        <span class="movie-type ellipsis">
+          {{movieItem.cat}}
+        </span>
+        <span class="movie-stars ellipsis">
+          主演: {{movieItem.star}}
+        </span>
+        <span class="movie-info ellipsis">
+          {{movieItem.showInfo}}
+        </span>
+      </div>
+      <div class="right">
+        <span class="score">
+          {{movieItem.sc}}分
+        </span>
+        <span class="tobuy">
+          购买
+        </span>
+      </div>
+    </div>
+  </div>
 </section>
 

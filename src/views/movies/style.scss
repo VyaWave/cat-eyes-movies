@@ -1,12 +1,135 @@
 .movies-list-view {
-  background:#3DA8F5;
-  flex: 1
-}
-.title {
-  display: block;
-  color: white;
-  font-size: 16px;
-  line-height: 40px;
-  width: 100%;
-  background: #ef1010
+
+  $font-small-size: 12px;
+  $font-middle-size: 20px;
+  $main-color: #df2d2d;
+  $gray: #666;
+  $score-color: #ff9a00;
+  $blue: #2895db;
+
+  background:white;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: $font-small-size;
+  .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .header {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    color: #808080;
+    background: white;
+    border-bottom: 1px solid #eee;
+    & .location {
+      flex:1;
+      overflow:hidden;
+    }
+    & .category {
+      flex: 3;
+      display: flex;
+      justify-content: space-around;
+      & .types {
+        flex: 1;
+        position: relative;
+        text-align: center;
+        &.active {
+          color: #df2d2d;
+          &:after {
+            position: relative;
+            content: '';
+            display: block;
+            border-bottom: 2px solid #df2d2d;
+          }
+        }
+      }
+    }
+    & .search {
+      flex: 1
+    }
+  }
+
+  .movies-list {
+    flex:1;
+    margin-top: 10px;
+    width: 100%;
+    overflow: auto;
+    .movie-item {
+      padding: 8px 10px;
+      display: flex;
+      height: 102px;
+      .left {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        img {
+          height:84px;
+          width: 60px;
+        }
+      }
+      .center {
+        width: 206px;
+        padding: 9px 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: $gray;
+        line-height: 20px;
+        .movie-name {
+          font-size: 16px;
+          color: #000;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          .movie-tag {
+            text-align: center;
+            padding: 2px 4px;
+            margin-left: 5px;
+            display: block;
+            border-radius: 3px;
+            height: 12px;
+            line-height: 12px;
+            font-size: 12px;
+            color: white;
+            background: $blue; 
+          }
+        }
+        .movie-info {
+          font-size: 12px;
+        }
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .score {
+          color: $score-color;
+          font-size: $font-middle-size;
+        }
+        .tobuy{
+          color: $main-color;
+          display:block;
+          font-size: $font-small-size;
+          border: 1px solid $main-color;
+          border-radius: 4px;
+          width: 48px;
+          line-height: $font-small-size;
+          padding: 4px 0;
+          margin-top: 10px;
+        }
+      }
+    }
+    .movie-item {
+      border-bottom: 1px solid #eee;
+    }
+  }
 }

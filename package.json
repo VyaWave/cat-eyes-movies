@@ -5,6 +5,7 @@
   "author": "wave just-foucs",
   "private": true,
   "scripts": {
+    "start": "node build/dev-server.js  --inline --hot",
     "dev": "node build/dev-server.js  --inline --hot",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",

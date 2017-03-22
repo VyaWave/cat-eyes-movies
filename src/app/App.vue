@@ -3,13 +3,16 @@
     <router-view></router-view>
     <div class="navigator">
       <router-link tag="div" to="/movies">
-        <a>Movies</a>
+        <p><img src="../../images/movie.png"/></p>
+        <a>电影</a>
       </router-link>
       <router-link tag="div" to="/cinemas">
-        <a>cinemas</a>
+        <p><img src="../../images/cinema.png"/></p>
+        <a>影院</a>
       </router-link>
       <router-link tag="div" to="/hello">
-        <a>hello</a>
+        <p><img src="../../images/mine.png"/></p>
+        <a>我的</a>
       </router-link>
     </div>
   </div>
@@ -36,20 +39,31 @@ export default {
   padding: 0 20px;
   width: 100%;
   position: absolute;
-  height: 40px;
   bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 40px;
+  line-height: 20px;
   font-size: 20px;
-  font-weight:800;
-  font-style: oblique;
+  font-weight:400;
+  font-style: 微软雅黑;
+  }
+  .navigator p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    paddign: 0;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    display: block;
   }
   a {
-    color: #7effc6;
-    font-size: 20px;
-    line-height: 40px;
+    color: #69686d;
+    font-size: 16px;
+    line-height: 20px;
     text-decoration: none;
     cursor: pointer;
   }

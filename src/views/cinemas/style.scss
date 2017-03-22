@@ -1,0 +1,120 @@
+.app-cinemas-view {
+
+  $font-small-size: 12px;
+  $font-middle-size: 20px;
+  $main-color: #df2d2d;
+  $gray: #666;
+  $score-color: #ff9a00;
+  $blue: #2895db;
+
+  display: flex;
+  flex: 1;
+  color: white;
+  flex-direction: column;
+  font-size: $font-small-size;
+  .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    width: 100%;
+    color: #808080;
+    background: #f5f5f5;
+    & .location {
+      height: 80%;
+      text-align: center;
+      flex: 1;
+    }
+    & .search-movies {
+      width: 300px;
+      background: white;
+      margin-top: 3px;
+      height: 80%;
+      border: 1px solid #999;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & .flag {
+        line-height: 32px;
+      }
+      & .input-element {
+        background: #fff;
+        border-radius: 5px;
+        border: 0;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+  .cinemas-list{
+    flex:1;
+    margin-top: 10px;
+    width: 100%;
+    overflow: auto;
+    .cinemas-items {
+      margin-left: 5px;
+      display: flex;
+      flex-direction: row;
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      & .first-line {
+        font-size: 16px;
+        font-wight: 800;
+      }
+      & .second-line {
+        width: 300px;
+        color: #5f5f5f;
+        font-size: 16px;
+        & span {
+          margin-right: 5px;
+        }
+      }
+      & .items-left {
+        text-align: left;
+        flex: 4;
+        & span {
+          margin-right: 5px;
+        }
+        & .price {
+          margin-left: 5px;
+          font-size: 16px;
+          color: #f13f33;
+        }
+        .start-up {
+          font-size: 12px;
+          color: #cb5d4c;
+        }
+        .name, .shop-name{
+          color: #000;
+          font-size: 16px;
+        }
+        .sit {
+          border: 1px solid #819999;
+          color: #819999;
+          border-radius: 4px;
+        }
+        .type {
+          border: 1px solid #e2a82a;
+          border-radius: 4px;
+          color: #e2a82a;
+        }
+      }
+      & .items-right {
+        color: #999;
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: flex-end; 
+      }
+    }
+  }
+}
+

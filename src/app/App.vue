@@ -5,8 +5,8 @@
       <router-link tag="div" to="/movies">
         <a>Movies</a>
       </router-link>
-      <router-link tag="div" to="/start">
-        <a>start</a>
+      <router-link tag="div" to="/cinemas">
+        <a>cinemas</a>
       </router-link>
       <router-link tag="div" to="/hello">
         <a>hello</a>

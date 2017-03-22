@@ -1,3 +1,4 @@
 build/*.js
 config/*.js
 src/views/movies/*.js
+src/views/cinemas/*.js

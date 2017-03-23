@@ -2,14 +2,15 @@
   <div id="app">
     <router-view></router-view>
     <div class="navigator">
-      <router-link tag="div" to="/movies">
-        <a>Movies</a>
+      <router-link tag="div" to="/movies" >
+        <a @click="toRouter('Movies')"
+        :class="{active: currentRouter == 'Movies' }">电影</a>
       </router-link>
-      <router-link tag="div" to="/cinemas">
-        <a>cinemas</a>
+      <router-link tag="div" to="/cinemas" @click="toRouter('cinemas')">
+        <a>影院</a>
       </router-link>
-      <router-link tag="div" to="/hello">
-        <a>hello</a>
+      <router-link tag="div" to="/hello" @click="toRouter('hello')">
+        <a>我的</a>
       </router-link>
     </div>
   </div>
@@ -17,7 +18,16 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data: () => ({
+    currentRouter: 'Movies'
+  }),
+  methods: {
+    toRouter (routerName) {
+      console.log(routerName)
+      this.currentRouter = routerName
+    }
+  }
 }
 </script>
 
@@ -32,6 +42,7 @@ export default {
   flex: 1
 }
 .navigator {
+  background: white;
   box-sizing: border-box;
   padding: 0 20px;
   width: 100%;
@@ -42,15 +53,16 @@ export default {
   justify-content: space-between;
   align-items: center;
   line-height: 40px;
-  font-size: 20px;
-  font-weight:800;
-  font-style: oblique;
+  font-size: 16px;
   }
   a {
-    color: #7effc6;
+    color: #808080;
     font-size: 20px;
     line-height: 40px;
     text-decoration: none;
     cursor: pointer;
+  }
+  .router-link-active a {
+    color:#df2d2d !important
   }
 </style>

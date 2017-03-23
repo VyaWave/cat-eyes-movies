@@ -20,7 +20,7 @@ export default new Router({
     },
     {
       path: '/',
-      redirect: '/start'
+      redirect: '/movies'
     },
     {
       path: '/movies',

@@ -33,19 +33,25 @@
       flex: 1;
     }
     & .search-movies {
+      padding-left: 30px;
       width: 300px;
       background: white;
       margin-top: 3px;
       height: 80%;
-      border: 1px solid #999;
-      border-radius: 10px;
+      border-radius: 6px;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-right: 10px;
       & .flag {
+        flex: 1;
         line-height: 32px;
+        flex-shrink: 0;
       }
       & .input-element {
+        flex: 7;
+        font-size: 14px;
+        line-height: 32px;
         background: #fff;
         border-radius: 5px;
         border: 0;
@@ -60,14 +66,14 @@
     width: 100%;
     overflow: auto;
     .cinemas-items {
-      margin-left: 5px;
+      margin-left: 15px;
       display: flex;
       flex-direction: row;
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
       & .first-line {
         font-size: 16px;
-        font-wight: 800;
+        font-weight: 800;
       }
       & .second-line {
         width: 300px;
@@ -113,6 +119,7 @@
         display: flex;
         flex: 1;
         justify-content: flex-end; 
+        margin-right: 15px;
       }
     }
   }

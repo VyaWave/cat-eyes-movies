@@ -1,0 +1,79 @@
+.app-profile-view {
+  background: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+  $font-small-size: 12px;
+  $font-middle-size: 20px;
+  $main-color: #df2d2d;
+  $gray: #666;
+  $score-color: #ff9a00;
+  $blue: #2895db;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: $font-middle-size;
+  .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .header {
+    width: 100%;
+    height: 5px;
+    background: #f5f5f5;
+  }
+  .my-info {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+  }
+  .my-movies {
+    background: #fff;
+    margin-top: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+  }
+  div .border-none {
+    border: none;
+  }
+  .row {
+    height: 60px;
+    margin-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    & .left {
+      color: #171717;
+      font-weight: 400;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-start
+    }
+    & .right {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    font-size: $font-small-size;
+    justify-content: center;
+    align-items: center;
+    & .span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  & .phone {
+      text-decoration: underline;
+      color: #f7b91a;
+    }
+}

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/views/hello/Hello'
+import Profile from '@/views/profile/index'
 import CinemasView from '@/views/cinemas/index'
 import MoviesList from '@/views/movies/index'
 
@@ -9,9 +9,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/hello',
-      name: 'Hello',
-      component: Hello
+      path: '/profile',
+      name: 'profile',
+      component: Profile
     },
     {
       path: '/cinemas',

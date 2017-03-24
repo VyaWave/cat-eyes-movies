@@ -11,7 +11,7 @@
         <p><img src="../../images/cinema.png"/></p>
         <a>影院</a>
       </router-link>
-      <router-link tag="div" to="/hello" @click="toRouter('hello')">
+      <router-link tag="div" to="/profile" @click="toRouter('profile')">
         <p><img src="../../images/mine.png"/></p>
         <a>我的</a>
       </router-link>
@@ -54,7 +54,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
   line-height: 20px;
   font-size: 20px;
   font-weight:400;

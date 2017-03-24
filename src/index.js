@@ -4,9 +4,10 @@ import Vue from 'vue'
 import App from './app/App'
 import router from './router'
 import Component from 'vue-class-component'
+import VueVideoPlayer from 'vue-video-player'
 
 Vue.config.productionTip = false
-
+Vue.use(VueVideoPlayer)
 /**
  * 此处为入口文件
  */

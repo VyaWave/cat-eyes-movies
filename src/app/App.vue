@@ -4,14 +4,13 @@
     <div class="navigator">
       <router-link tag="div" to="/movies" >
         <p><img src="../../images/movie.png"/></p>
-        <a @click="toRouter('Movies')"
-        :class="{active: currentRouter == 'Movies' }">电影</a>
+        <a>电影</a>
       </router-link>
-      <router-link tag="div" to="/cinemas" @click="toRouter('cinemas')">
+      <router-link tag="div" to="/cinemas">
         <p><img src="../../images/cinema.png"/></p>
         <a>影院</a>
       </router-link>
-      <router-link tag="div" to="/profile" @click="toRouter('profile')">
+      <router-link tag="div" to="/hello">
         <p><img src="../../images/mine.png"/></p>
         <a>我的</a>
       </router-link>
@@ -26,10 +25,6 @@ export default {
     currentRouter: 'Movies'
   }),
   methods: {
-    toRouter (routerName) {
-      console.log(routerName)
-      this.currentRouter = routerName
-    }
   }
 }
 </script>

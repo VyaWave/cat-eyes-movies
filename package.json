@@ -17,6 +17,7 @@
     "fetch": "^1.1.0",
     "vue": "^2.2.1",
     "vue-router": "^2.2.0",
+    "vue-video-player": "^3.0.0",
     "vuex": "^2.2.1"
   },
   "devDependencies": {

@@ -1,25 +1,8 @@
 <template>
-  <div class="hello">
-     <img src="../../assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-dbffffff</a></li>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+    <video-player  ref="videoPlayer"
+      :options="playerOptions"
+    >
+  </video-player>
 </template>
 
 <script>
@@ -27,29 +10,60 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      playerOptions: {
+
+        // component options
+        start: 0,
+        playsinline: false,
+
+        // videojs options
+        muted: true,
+        language: 'en',
+        playbackRates: [0.7, 1.0, 1.5, 2.0],
+        sources: [{
+          type: 'video/mp4',
+          src: 'http://vodcdn.video.taobao.com/oss/taobao-ugc/85b9f21f2d3b4d7cae302263574013d5/1489937235/video.mp4'
+        }],
+        poster: 'http://p1.meituan.net/movie/9a1bfb5e2abc6908096d91b9d95eb91427121.jpg'
+      }
+    }
+  },
+  mounted () {
+    console.log('this is current player instance object', this.player)
+  },
+  computed: {
+    player () {
+      return this.$refs.videoPlayer.player
+    }
+  },
+  methods: {
+    // listen event
+    onPlayerPlay (player) {
+      // console.log('player play!', player)
+    },
+    onPlayerPause (player) {
+      // console.log('player pause!', player)
+    },
+    // ...player event
+
+    // or listen state event
+    playerStateChanged (playerCurrentState) {
+      // console.log('player current update state', playerCurrentState)
+    },
+
+    // player is ready
+    playerReadied (player) {
+      console.log('the player is readied', player)
+      // you can use it to do something...
+      // player.[methods]
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+<style>
+  .video-player{
+    width: 100%;
+  }
 </style>

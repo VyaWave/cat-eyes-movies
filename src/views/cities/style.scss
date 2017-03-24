@@ -1,0 +1,12 @@
+.city-chooser-view {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  text-align: left;
+  .caption {
+    padding-left:20px;
+    font-size: 14px;
+    line-height: 40px;
+    background: #eee;
+  }
+}

@@ -10,7 +10,7 @@
         <p><img src="../../images/cinema.png"/></p>
         <a>影院</a>
       </router-link>
-      <router-link tag="div" to="/hello">
+      <router-link tag="div" to="/profile">
         <p><img src="../../images/mine.png"/></p>
         <a>我的</a>
       </router-link>

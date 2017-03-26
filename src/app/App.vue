@@ -30,6 +30,11 @@ export default {
 </script>
 
 <style>
+html,body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,14 +42,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   display: flex;
-  flex: 1
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .navigator {
   background: white;
   box-sizing: border-box;
   padding: 0 20px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -59,7 +67,7 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 0;
-    paddign: 0;
+    padding: 0;
   }
   img {
     width: 20px;

@@ -3,10 +3,60 @@
   flex:1;
   flex-direction: column;
   text-align: left;
+  overflow: auto;
   .caption {
-    padding-left:20px;
+    padding-left:15px;
     font-size: 14px;
     line-height: 40px;
     background: #eee;
+  }
+
+  .city-block {
+    background: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ellicaps {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .city-item {
+    display: inline-block;
+    margin: 10px;
+    width:90px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+  .all-city {
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    .item {
+      width: 100%;
+      display: block;
+    }
+    .wrap-wrap  {
+      padding-bottom: 60px;
+      background: white;
+    }
+    .wrap {
+      background: #F5F5F5;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .all-city-item {
+      box-sizing: border-box;
+      margin: 0 15px;
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      line-height: 40px;
+      border-bottom: 1px solid #eee;
+    }
   }
 }

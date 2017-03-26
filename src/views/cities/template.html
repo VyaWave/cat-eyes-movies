@@ -1,9 +1,9 @@
 <section class="city-chooser-view">
-  <div class="location">
+  <div class="location city-block">
     <div class="caption">
-      热门城市
+      当前城市
     </div>
-    <div class="location-city">
+    <div class="location-item city-item">
       上海
     </div>
   </div>
@@ -11,21 +11,30 @@
     <div class="caption">
       最近访问的城市
     </div>
-    <span class="reccent-item">上海</span>
-    <span class="reccent-item">阿拉善盟</span>
+    <div class="wrap city-block">
+      <span class="reccent-item city-item ellicaps">上海</span>
+    </div>
   </div>
   <div class="hot-city">
-    <div class="caption">
-      热门城市
+    <div class="hot-item">
+      <div class="caption">
+        热门城市
+      </div>
+      <div class="wrap city-block">
+        <span class="city-item ellicaps" v-for="item in hotcities">{{item.name}}</span>
+      </div>
     </div>
-    <span class="hot-item">上海</span>
-    <span class="hot-item">阿拉善盟</span>
   </div>
   <div class="all-city">
-    <div class="item">
-      <div class="caption">
-        <div class="city-item">
-          上海
+    <div class="wrap-wrap">
+      <div class="item" v-for="caption in captionCity">
+        <div class="caption">
+        {{caption}}
+        </div>
+        <div class="ellicaps">
+          <div class="all-city-item all-city-item" v-for="item in allCities[caption]">
+            {{item.name}}
+          </div>
         </div>
       </div>
     </div>

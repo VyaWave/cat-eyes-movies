@@ -10,6 +10,8 @@ import { cities } from './mock.cities'
 export default class CitiesChooser extends Vue {
   created () {
     // 城市数据
-    this.hotcities = cities.data.CityMap.hot
+    this.hotcities = cities.hot
+    this.allCities = cities.data.CityMap
+    this.captionCity = Object.keys(this.allCities)
   }
 }

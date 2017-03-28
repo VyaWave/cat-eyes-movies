@@ -41,12 +41,15 @@
         text-align: center;
         &.active {
           color: #df2d2d;
-          &:after {
-            position: relative;
-            content: '';
-            display: block;
+          .name{
             border-bottom: 2px solid #df2d2d;
           }
+          // .name:after {
+          //   position: relative;
+          //   content: '';
+          //   display: block;
+          //   border-bottom: 2px solid #df2d2d;
+          // }
         }
       }
     }
@@ -98,7 +101,7 @@
             line-height: 12px;
             font-size: 12px;
             color: white;
-            background: $blue; 
+            background: $blue;
           }
         }
         .movie-info {

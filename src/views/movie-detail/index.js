@@ -1,16 +1,15 @@
 import Component from 'vue-class-component'
 import{ BaseView } from '../baseview'
-import { cinemas } from './mock.ciemas'
 import './style.scss'
 
 @Component({
   template: require('./template.html')
 })
-// 影院列表
-export default class CinemasView extends BaseView {
+
+export default class MovieDetail extends BaseView {
 
   created () {
-    this.cinemas = cinemas
-    this.headerConfig  = {title: '影院'}
+    console.log(this.defaultHeader)
+    this.headerConfig = { title: '影片详情' }
   }
 }

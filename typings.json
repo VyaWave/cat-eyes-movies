@@ -7,6 +7,7 @@
     "mocha": "registry:dt/mocha#2.2.5+20170204022515",
     "node": "registry:dt/node#7.0.0+20170204020307",
     "require": "registry:dt/require#2.1.20+20160919185614",
-    "systemjs": "registry:dt/systemjs#0.20.5+20170220224323"
+    "systemjs": "registry:dt/systemjs#0.20.5+20170220224323",
+    "vue": "registry:dt/vue#1.0.21+20160929090511"
   }
 }

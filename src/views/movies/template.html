@@ -16,7 +16,7 @@
   </div>
   <!--电影列表-->
   <div class="movies-list">
-    <div class="movie-item" v-for="movieItem in movies">
+    <router-link tag="div" to="/movies/movie-detail" class="movie-item" v-for="movieItem in movies">
       <div class="left">
         <img :src="movieItem.img"/>
       </div>
@@ -46,7 +46,7 @@
           购买
         </span>
       </div>
-    </div>
+    </router-link>
   </div>
 </section>
 

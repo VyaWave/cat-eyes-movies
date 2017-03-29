@@ -6,3 +6,4 @@ yarn-error.log
 test/unit/coverage
 tsconfig.json
 .vscode
+typings/

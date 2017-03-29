@@ -1,5 +1,5 @@
 import Component from 'vue-class-component'
-import Vue from 'Vue'
+import{ BaseView } from '../baseview'
 import './style.scss'
 // import { cinemas } from './mock.ciemas'
 
@@ -7,9 +7,9 @@ import './style.scss'
   template: require('./template.html')
 })
 
-export default class CinemasView extends Vue {
+export default class CinemasView extends BaseView {
 
   created () {
-    // this.cinemas = cinemas
+     this.headerConfig  = {title: '我的'}
   }
 }

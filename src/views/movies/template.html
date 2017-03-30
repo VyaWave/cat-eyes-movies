@@ -16,7 +16,8 @@
   </div>
   <!--电影列表-->
   <div class="movies-list">
-    <router-link tag="div" to="/movies/movie-detail" class="movie-item" v-for="movieItem in movies">
+    <router-link tag="div" to="/movies/movie-detail" class="movie-item" v-for="movieItem in movies"
+      :key="movieItem.nm">
       <div class="left">
         <img :src="movieItem.img"/>
       </div>

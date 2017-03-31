@@ -47,6 +47,9 @@ Object.keys(proxyTable).forEach(function (context) {
   var options = proxyTable[context]
   if (typeof options === 'string') {
     options = { target: options }
+  } else {
+    //增加通用的代理设置 todos
+    // Object.keys(options).clone().asign()
   }
   app.use(proxyMiddleware(options.filter || context, options))
 })

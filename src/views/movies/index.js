@@ -42,7 +42,6 @@ export default class MoviesList extends BaseView {
     this.godService.getMovies()
       .then(movies => {
         this.movies = movies
-        console.log(movies)
       })
   }
 }

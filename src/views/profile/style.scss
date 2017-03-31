@@ -2,7 +2,7 @@
   background: #f5f5f5;
   border-bottom: 1px solid #e5e5e5;
   $font-small-size: 12px;
-  $font-middle-size: 20px;
+  $font-middle-size: 16px;
   $main-color: #df2d2d;
   $gray: #666;
   $score-color: #ff9a00;
@@ -19,8 +19,22 @@
   }
   .header {
     width: 100%;
-    height: 5px;
-    background: #f5f5f5;
+    height: 120px;
+    padding: 10px 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+    .name {
+      margin-top: 10px;
+    }
   }
   .my-info {
     background: #fff;
@@ -37,15 +51,13 @@
     border: none;
   }
   .row {
-    height: 60px;
-    margin-left: 15px;
-    padding-right: 15px;
-    border-bottom: 1px solid #e5e5e5;
+    height: 40px;
+    margin: 0 15px;
+    border-bottom: 1px solid #eee;
     display: flex;
     flex-direction: row;
     & .left {
-      color: #171717;
-      font-weight: 400;
+      color: #808080;
       display: flex;
       flex: 1;
       align-items: center;
@@ -56,6 +68,11 @@
       flex: 1;
       align-items: center;
       justify-content: flex-end;
+    }
+    i {
+      color: #eeeeee;
+      width: 14px;
+      height:14px;
     }
   }
   .footer {

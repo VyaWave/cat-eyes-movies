@@ -1,11 +1,12 @@
+@import'../../styles/main.scss';
 .app-cinemas-view {
 
-  $font-small-size: 12px;
-  $font-middle-size: 20px;
-  $main-color: #df2d2d;
-  $gray: #666;
-  $score-color: #ff9a00;
-  $blue: #2895db;
+  // $font-small-size: 12px;
+  // $font-middle-size: 20px;
+  // $main-color: #df2d2d;
+  // $gray: #666;
+  // $score-color: #ff9a00;
+  // $blue: #2895db;
 
   display: flex;
   flex: 1;
@@ -19,39 +20,37 @@
   }
   .header {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     color: white;
     font-size: 16px;
     line-height: 40px;
+    padding: 4px 15px;
     height: 40px;
-    width: 100%;
     color: #808080;
     background: #f5f5f5;
     & .location {
-      height: 80%;
+      line-height: 40px;
       text-align: center;
-      flex: 1;
+      flex: 2;
     }
     & .search-movies {
-      padding-left: 30px;
-      width: 300px;
+      flex: 8;
       background: white;
-      margin-top: 3px;
-      height: 80%;
-      border-radius: 6px;
+      line-height: 24px;
+      border-radius: 18px;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 10px;
+      padding: 1px 20px;
       & .flag {
         flex: 1;
-        line-height: 32px;
+        line-height: 24px;
         flex-shrink: 0;
       }
       & .input-element {
         flex: 7;
         font-size: 14px;
-        line-height: 32px;
+        line-height: 24px;
         background: #fff;
         border-radius: 5px;
         border: 0;
@@ -119,7 +118,7 @@
         align-items: center;
         display: flex;
         flex: 1;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         margin-right: 15px;
       }
     }

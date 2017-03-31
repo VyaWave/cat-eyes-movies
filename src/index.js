@@ -6,6 +6,7 @@ import router from './router'
 import Component from 'vue-class-component'
 import VueVideoPlayer from 'vue-video-player'
 import ElementUI from 'element-ui'
+require('./styles/main.scss')
 // 样式单独引入
 import 'element-ui/lib/theme-default/index.css'
 

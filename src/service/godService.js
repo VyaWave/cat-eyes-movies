@@ -9,35 +9,34 @@ export class GodService {
   getMovies () {
     return fetch('/cat/hotmovies')
       .then((response) => {
-        this.dealResponse(response)
+        return this.dealResponse(response)
       })
       .then((r) => {
         // 处理真是数据结果
         return r.data.movies
       })
       .catch(err => {
-        this.dealError(err)
+        this.dealError(err, 'movies信息失效')
       })
   }
 
   getCinemas () {
     return fetch('/cat/cinemas')
       .then((response) => {
-        this.dealResponse(response)
+        return this.dealResponse(response)
       })
-      .then((r) => {
+      .then(r => {
         // 心累 o。O
-        // 处理真是数据结果
+        // 处理影院数据
         return r.data.徐汇区
       })
       .catch(err => {
-        this.dealError(err)
+        this.dealError(err, 'cinemas信息失效')
       })
   }
 
-  dealError (error) {
-    console.error(error)
-    console.info('未知错误')
+  dealError (error, apimessage) {
+    console.error(error, apimessage)
   }
 
   dealResponse (res) {

@@ -1,5 +1,5 @@
 import Component from 'vue-class-component'
-import{ BaseView } from '../baseview'
+import{ BaseView } from '../base.view'
 import './style.scss'
 // import { cinemas } from './mock.ciemas'
 

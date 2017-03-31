@@ -33,7 +33,7 @@ module.exports = {
         secure: false,
         changeOrigin: true,
         pathRewrite: {
-          '^/cat/hotmovies': 'movie/list.json?type=hot&offset=0&limit=10'
+          '^/cat/hotmovies': 'movie/list.json?type=hot&offset=0&limit=1000'
         }
       }
     },

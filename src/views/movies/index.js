@@ -32,7 +32,7 @@ export default class MoviesList extends BaseView {
     // 电影数据和城市数据
     // this.getlist()
     this.godService = new GodService()
-    this.movies = moviesHotData.data.movies
+    //this.movies = moviesHotData.data.movies
     this.cities = cities
     this.headerConfig = {title: '猫眼电影'}
     this.getMovies()

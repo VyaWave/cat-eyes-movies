@@ -32,8 +32,18 @@ module.exports = {
         target: 'http://m.maoyan.com',
         secure: false,
         changeOrigin: true,
+        datatype: 'json',
         pathRewrite: {
-          '^/cat/hotmovies': 'movie/list.json?type=hot&offset=0&limit=1000'
+          '^/cat/hotmovies': '/movie/list.json?type=hot&offset=0&limit=1000'
+        }
+      },
+      '/cat/cinemas': {
+        target: 'http://m.maoyan.com',
+        secure: false,
+        changeOrigin: true,
+        datatype: 'json',
+        pathRewrite: {
+          '^/cat/cinemas': '/cinemas.json'
         }
       }
     },

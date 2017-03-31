@@ -14,7 +14,7 @@ export const cinemas = {
                 "lat": 31.254892,
                 "lng": 121.591034,
                 "sellPrice": 33,
-                "addr": "浦东新区平度路258号金桥大拇指广场3号楼1层",
+                "addr": "258号金桥大拇指广场3号楼1层",
                 "imax": 0,
                 "sellmin": 0,
                 "sell": true,

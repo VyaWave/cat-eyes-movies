@@ -14,7 +14,7 @@ import './style.scss'
 export default class CinemasView extends BaseView {
 
   created () {
-    // this.cinemas = cinemas.data.浦东新区
+    this.cinemas = cinemas.data.浦东新区
     this.headerConfig = {title:'影院'}
     this.godService = new GodService()
     this.getCinemasDta()

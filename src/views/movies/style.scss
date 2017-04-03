@@ -65,6 +65,8 @@
     width: 100%;
     overflow: auto;
     .movie-item {
+      flex: 1;
+      box-sizing: border-box;
       padding: 8px 10px;
       display: flex;
       height: 102px;
@@ -78,7 +80,7 @@
         }
       }
       .center {
-        width: 206px;
+        flex:1;
         padding: 9px 0;
         text-align: left;
         display: flex;
@@ -110,8 +112,8 @@
         }
       }
       .right {
-        flex: 1;
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;

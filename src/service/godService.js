@@ -28,7 +28,7 @@ export class GodService {
       .then(r => {
         // 心累 o。O
         // 处理影院数据
-        return r.data.徐汇区
+        return r.data.余姚市
       })
       .catch(err => {
         this.dealError(err, 'cinemas信息失效')

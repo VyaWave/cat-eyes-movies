@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "vue": "^2.2.1",
+    "vue-infinite-scroll": "^2.0.1",
     "vue-router": "^2.2.0",
     "vue-video-player": "^3.0.0",
     "vuex": "^2.2.1"

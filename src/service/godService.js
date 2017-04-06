@@ -26,9 +26,15 @@ export class GodService {
         return this.dealResponse(response)
       })
       .then(r => {
-        // 心累 o。O
+        let _data = []
+        // 心累 o。O累什么累？
         // 处理影院数据
-        return r.data.浦东新区
+        for (const k in r.data) {
+          r.data[k].map((i) => {
+            _data.push(i)
+          })
+        }
+        return _data
       })
       .catch(err => {
         this.dealError(err, 'cinemas信息失效')

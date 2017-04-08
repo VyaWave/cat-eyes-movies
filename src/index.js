@@ -6,11 +6,13 @@ import router from './router'
 import Component from 'vue-class-component'
 import VueVideoPlayer from 'vue-video-player'
 import ElementUI from 'element-ui'
+import { VueRx } from './mixins/rx'
 require('./styles/main.scss')
 // 样式单独引入
 import 'element-ui/lib/theme-default/index.css'
 
 Vue.config.productionTip = false
+Vue.use(VueRx)
 Vue.use(VueVideoPlayer)
 Vue.use(ElementUI)
 /**

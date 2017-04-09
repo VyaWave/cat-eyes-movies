@@ -22,7 +22,8 @@ export default class CinemasView extends BaseView {
 
   getCinemasDta () {
     this.godService.getCinemas()
-      .then(cinemas => {
+      .distinctUntilChanged()
+      .subscribe(cinemas => {
         this.cinemas = cinemas
       })
   }

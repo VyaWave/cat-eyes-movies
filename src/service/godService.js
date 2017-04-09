@@ -3,11 +3,12 @@
  * @class baseService
  * @extends {fetch}
  */
+import { Observable } from 'rxjs'
 
 export class GodService {
 
   getMovies () {
-    return fetch('/cat/hotmovies')
+    return Observable.fromPromise(fetch('/cat/hotmovies')
       .then((response) => {
         return this.dealResponse(response)
       })
@@ -17,11 +18,11 @@ export class GodService {
       })
       .catch(err => {
         this.dealError(err, 'movies信息失效')
-      })
+      }))
   }
 
   getCinemas () {
-    return fetch('/cat/cinemas')
+    return Observable.fromPromise(fetch('/cat/cinemas')
       .then((response) => {
         return this.dealResponse(response)
       })
@@ -38,7 +39,7 @@ export class GodService {
       })
       .catch(err => {
         this.dealError(err, 'cinemas信息失效')
-      })
+      }))
   }
 
   dealError (error, apimessage) {

@@ -2,9 +2,9 @@ import Component from 'vue-class-component'
 import{ BaseView } from '../base.view'
 import {mapState, mapActions} from 'vuex'
 import { moviesHotData } from './mock.movies'
-import { cities } from './mock.cities'
 import fetch from 'isomorphic-fetch'
 import { GodService } from '../../service/godService'
+import { Observable } from 'rxjs'
 import './style.scss'
 
 @Component({
@@ -30,17 +30,16 @@ export default class MoviesList extends BaseView {
 
   created () {
     // 电影数据和城市数据
-    // this.getlist()
     this.godService = new GodService()
     this.movies = moviesHotData.data.movies
-    this.cities = cities
     this.headerConfig = {title: '猫眼电影'}
     this.getMovies()
   }
 
   getMovies() {
     this.godService.getMovies()
-      .then(movies => {
+      .distinctUntilChanged()
+      .subscribe(movies => {
         this.movies = movies
       })
   }

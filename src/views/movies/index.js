@@ -40,6 +40,7 @@ export default class MoviesList extends BaseView {
     this.godService.getMovies()
       .distinctUntilChanged()
       .subscribe(movies => {
+        console.info('影片数据已更新')
         this.movies = movies
       })
   }

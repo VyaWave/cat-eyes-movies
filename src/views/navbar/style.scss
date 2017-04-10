@@ -1,0 +1,16 @@
+.navbar-view {
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+  color: #808080;
+  .left {
+    flex: 1
+  }
+  .center {
+    flex:2
+  }
+  .right {
+    flex: 1
+  }
+}

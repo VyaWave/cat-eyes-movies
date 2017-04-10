@@ -7,6 +7,7 @@ import Component from 'vue-class-component'
 import VueVideoPlayer from 'vue-video-player'
 import ElementUI from 'element-ui'
 import { VueRx } from './mixins/rx'
+import NavbarView from '@/views/navbar'
 require('./styles/main.scss')
 // 样式单独引入
 import 'element-ui/lib/theme-default/index.css'
@@ -27,7 +28,7 @@ import store from './store/store'
   router,
   store,
   template: '<App/>',
-  components: { App }
+  components: { App, NavbarView }
 })
 
 export class AppView extends Vue {

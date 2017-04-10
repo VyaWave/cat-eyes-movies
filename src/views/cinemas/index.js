@@ -24,6 +24,7 @@ export default class CinemasView extends BaseView {
     this.godService.getCinemas()
       .distinctUntilChanged()
       .subscribe(cinemas => {
+        console.info('影院数据已更新')
         this.cinemas = cinemas
       })
   }

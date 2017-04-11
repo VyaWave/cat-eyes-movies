@@ -34,6 +34,7 @@ export default class MoviesList extends BaseView {
     this.movies = moviesHotData.data.movies
     this.headerConfig = {title: '猫眼电影'}
     this.getMovies()
+    this.location = JSON.parse(sessionStorage.getItem('currentCity')) || {name: '上海'}
   }
 
   getMovies() {

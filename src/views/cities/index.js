@@ -15,4 +15,12 @@ export default class CitiesChooser extends BaseView {
     this.allCities = cities.data.CityMap
     this.captionCity = Object.keys(this.allCities)
   }
+
+  select(city) {
+    sessionStorage.setItem('currentCity', JSON.stringify(city))
+    this.$router.push({
+      name: 'movies',
+      replace: true
+    })
+  }
 }

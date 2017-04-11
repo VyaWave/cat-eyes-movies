@@ -16,6 +16,6 @@ export default class StartView extends BaseView {
       this.$router.push({
         name: 'movies'
       })
-    }, 3*1000)
+    }, 4*1000)
   }
 }

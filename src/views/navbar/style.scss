@@ -1,9 +1,11 @@
 .navbar-view {
+  display: none !important;
   height: 40px;
   line-height: 40px;
   display: flex;
   justify-content: space-around;
-  color: #808080;
+  color: #df2d2d;
+  border-bottom: 1px solid #808080;
   .left {
     flex: 1
   }

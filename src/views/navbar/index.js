@@ -3,14 +3,14 @@ import{ BaseView } from '../base.view'
 import './style.scss'
 
 @Component({
+  name: 'navbar',
   template: require('./template.html'),
   data: () => ({
   })
 })
-// 影院列表
-export default class NavbarView extends BaseView {
+
+export class Navbar extends BaseView {
 
   created () {
-    console.log(11)
   }
 }

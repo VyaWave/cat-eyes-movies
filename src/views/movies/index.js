@@ -23,7 +23,8 @@ import './style.scss'
       'test': state => state.moviesListVuex.test,
       'loading': state => state.moviesListVuex.loading
     })
-  }
+  },
+  components: {}
 })
 
 export default class MoviesList extends BaseView {

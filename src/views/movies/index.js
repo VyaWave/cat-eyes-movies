@@ -5,12 +5,14 @@ import { moviesHotData } from './mock.movies'
 import fetch from 'isomorphic-fetch'
 import { GodService } from '../../service/godService'
 import { Observable } from 'rxjs'
+import { LoadingIndicator } from '../../components/loading-indicator/index'
 import './style.scss'
 
 @Component({
   template: require('./template.html'),
   data: () => ({
-    movies: null
+    movies: null,
+    isLoading: Boolean
   }),
   methods: {
     ...mapActions({
@@ -24,15 +26,16 @@ import './style.scss'
       'loading': state => state.moviesListVuex.loading
     })
   },
-  components: {}
+  components: {LoadingIndicator}
 })
 
 export default class MoviesList extends BaseView {
 
   created () {
+    this.isLoading = true
     // 电影数据和城市数据
     this.godService = new GodService()
-    this.movies = moviesHotData.data.movies
+    // this.movies = moviesHotData.data.movies
     this.headerConfig = {title: '猫眼电影'}
     this.getMovies()
     this.location = JSON.parse(sessionStorage.getItem('currentCity')) || {name: '上海'}
@@ -44,6 +47,7 @@ export default class MoviesList extends BaseView {
       .subscribe(movies => {
         console.info('影片数据已更新')
         this.movies = movies
+        this.isLoading = false
       })
   }
 }

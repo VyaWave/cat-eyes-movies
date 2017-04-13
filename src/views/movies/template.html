@@ -15,7 +15,8 @@
     <div class="search"><i class="el-icon-search"></i></div>
   </div>
   <!--电影列表-->
-  <div class="movies-list">
+  <loading-indicator v-if="isLoading"></loading-indicator>
+  <div class="movies-list" v-else>
     <router-link tag="div" to="/movies/movie-detail" class="movie-item" v-for="movieItem in movies"
       :key="movieItem.nm">
       <div class="left">

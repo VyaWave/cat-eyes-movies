@@ -1,5 +1,5 @@
 /**
- * 后台服务入口
+ *  后台服务入口
  */
 var express = require('express');
 var path = require('path');
@@ -14,6 +14,6 @@ var routes = require('./routes/route_app');
 
 var app = express();
 var ejs = require('ejs');
-// 设置路由参数 和 渲染库 😢
+// 设置路由参数 和 渲染库 😢EJS
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

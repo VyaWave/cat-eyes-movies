@@ -9,8 +9,21 @@
   "author": "Wave",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "co-body": "^5.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "error": "^7.0.2",
     "express": "^4.15.2",
+    "express-resource": "^1.0.0",
     "fs": "^0.0.1-security",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^2.0.1",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "morgan": "^1.8.1",
+    "serve-favicon": "^2.4.2",
     "webpack": "^2.3.3"
   }
 }

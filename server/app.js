@@ -38,7 +38,7 @@ app.get('/__webpack_hmr', function(req, res) {
 
 // router redirect
 app.get('/', (req, res) => {
-   res.redirect('app');
+   res.redirect('catEyesMovies');
 });
 
 // router setting

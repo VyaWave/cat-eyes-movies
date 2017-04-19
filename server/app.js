@@ -85,8 +85,4 @@ app.use(function (err, req, res, next) {
   });
 });
 
-app.listen(5600, () => {
-  console.log('catEyesMivies server listening on port 5600!');
-});
-
 module.exports = app;

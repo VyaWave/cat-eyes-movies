@@ -15,5 +15,6 @@ import './style.scss'
 export default class AppView extends BaseView {
 
   mounted () {
+    console.log('vim')	  
   }
 }

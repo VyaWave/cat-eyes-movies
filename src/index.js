@@ -7,6 +7,7 @@ import Component from 'vue-class-component'
 import VueVideoPlayer from 'vue-video-player'
 import ElementUI from 'element-ui'
 import { VueRx } from './mixins/rx'
+import VueDPlayer from 'vue-dplayer'
 // import { LoadingIndicator } from './components/loading-indicator/index'
 require('./styles/main.scss')
 // 样式单独引入
@@ -17,6 +18,8 @@ Vue.config.productionTip = false
 Vue.use(VueRx)
 Vue.use(VueVideoPlayer)
 Vue.use(ElementUI)
+Vue.use(VueDPlayer)
+
 /**
  * 此处为入口文件
  */

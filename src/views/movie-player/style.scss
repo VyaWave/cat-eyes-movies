@@ -1,4 +1,83 @@
 .movie-play-detail {
   display: flex;
   flex: 1;
+  flex-direction: column;
+
+  .info {
+    padding: 10px 20px 12px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid #eee;
+    .left {
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-weight: 600;
+        text-align: left;
+        line-height: 40px;
+        .score {
+          color: orange;
+          padding-left: 10px;
+        }
+      }
+      .date {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .buy {
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        background: red;
+        color:white;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding-bottom: 40px;
+    .item {
+      flex-shrink: 0;
+      display: flex;
+      height: 100px;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 10px 20px;
+      .left {
+        img{
+          width:60px;
+          height: 85px;
+          margin-right: 20px;
+        }
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: left;
+        span {
+          display: block
+        }
+        .name {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+  }
 }

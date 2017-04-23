@@ -53,5 +53,8 @@ export default class MoviesList extends BaseView {
 
   playIt() {
     console.info('播放他啊啊')
+    this.$router.push({
+      path: '/movie-player'
+    })
   }
 }

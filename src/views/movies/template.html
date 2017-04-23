@@ -19,8 +19,11 @@
   <div class="movies-list" v-else>
     <router-link tag="div" to="/movies/movie-detail" class="movie-item" v-for="movieItem in movies"
       :key="movieItem.nm">
-      <div class="left">
+      <div class="left" @click.stop="playIt">
         <img :src="movieItem.img"/>
+        <div class="btn">
+          <img src="../../assets/playbtn.png" alt="play btn" class="btnitem">
+        </div>
       </div>
       <div class="center">
         <span class="movie-name ellipsis">

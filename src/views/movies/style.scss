@@ -45,12 +45,6 @@
           .name{
             border-bottom: 2px solid #df2d2d;
           }
-          // .name:after {
-          //   position: relative;
-          //   content: '';
-          //   display: block;
-          //   border-bottom: 2px solid #df2d2d;
-          // }
         }
       }
     }
@@ -71,12 +65,27 @@
       display: flex;
       height: 102px;
       .left {
-        display: flex;
-        align-items: center;
+        user-select:none;
+        cursor: pointer;
+        position: relative;
         margin-right: 10px;
         img {
           height:84px;
           width: 60px;
+        }
+        .btn {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .btnitem {
+            height: 16px;
+            width: 16px;
+          }
         }
       }
       .center {
@@ -113,7 +122,6 @@
       }
       .right {
         display: flex;
-        flex: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;

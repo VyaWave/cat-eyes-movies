@@ -50,4 +50,8 @@ export default class MoviesList extends BaseView {
         this.isLoading = false
       })
   }
+
+  playIt() {
+    console.info('播放他啊啊')
+  }
 }

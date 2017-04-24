@@ -3,15 +3,16 @@
     <d-player ref="player" :video="video"></d-player>
     <div class="info">
       <div class="left">
-        <span class="name">你的名字<span class="score">9.3分</span></span>
-        <span class="date">2016-11-13号上映</span>
+        <span class="name">{{video.name}}<span class="score">9.3分</span></span>
+        <span class="date">{{video.msg}}</span>
       </div>
       <div class="right">
         <span class="buy">购买</span>
       </div>
     </div>
   </div>
-  <div class="list">
+  <loading-indicator v-if="isLoading"></loading-indicator>
+  <div class="list" v-else>
     <div class="item" v-for="item in videos" @click="playIt(item)">
       <div class="left">
         <img :src="item.post">

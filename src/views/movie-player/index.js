@@ -23,8 +23,8 @@ import './style.scss'
 export default class MoviePlayer extends BaseView {
 
   mounted () {
-    let player = this.$refs.player.dp
-    player =  Object.assign(player,{
+    this.player = this.$refs.player.dp
+    this.player =  Object.assign(this.player,{
       screenshot: false,
       autoplay: true,
       theme: "#FADFA3",
@@ -34,6 +34,10 @@ export default class MoviePlayer extends BaseView {
   }
 
   playIt(item) {
-    this.video = item
+    this.player.switchVideo({
+      url: item.url,
+      pic: item.pic,
+      type: 'auto'
+    })
   }
 }

@@ -14,14 +14,14 @@
   <div class="list">
     <div class="item" v-for="item in videos" @click="playIt(item)">
       <div class="left">
-        <img :src="item.pic">
+        <img :src="item.post">
       </div>
       <div class="right">
         <span class="name">
-          你的名字
+          {{item.name}}
         </span>
         <span class="msg">
-          观看次数： 3000万次
+          {{item.msg}}
         </span>
       </div>
     </div>

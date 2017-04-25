@@ -5,6 +5,7 @@ html,body {
   overflow: hidden;
   display: flex;
   flex: 1;
+  background: #a6a6a6;
 }
 .app-root-view {
   width: 100%;
@@ -23,13 +24,18 @@ html,body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 520px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #eee;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1)
   }
   .navigator {
     background: white;
     box-sizing: border-box;
     padding: 0 20px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     display: flex;
     justify-content: space-between;

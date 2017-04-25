@@ -43,10 +43,12 @@ export default new Router({
     },
     {
       path: '/movies/movie-detail',
+      name: 'movie-detail',
       component: MovieDetail
     },
     {
       path: '/movie-player',
+      name: 'movie-player',
       component: MoviePlayer
     }
   ]

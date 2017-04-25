@@ -52,18 +52,45 @@ html,body {
     .nav-item {
       width: 100px;
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     a {
       color: #69686d;
       font-size: 16px;
-      line-height: 20px;
+      line-height: 24px;
       text-decoration: none;
       cursor: pointer;
-      line-height: 40px;
-      font-size: 16px;
       width: 100px;
     }
-    .router-link-active a {
-      color:#df2d2d !important
+    .icon {
+      margin-top: 6px;
+      width: 20px;
+      height: 24px;
+      display: block;
+      content: "";
+      background-image: url(../../assets/movies2.svg);
+      background-size: 100% 100%;
+      &.cinemas {
+        background-image: url(../../assets/cinemas.svg);
+      }
+      &.me  {
+        background-image: url(../../assets/me.svg);
+      }
+    }
+    .router-link-active {
+      a {
+        color:#df2d2d !important;
+      }
+      .icon.me {
+        background-image: url(../../assets/me2.svg) !important;
+      }
+      .icon.cinemas {
+        background-image: url(../../assets/cinemas2.svg) !important;
+      }
+      .icon.movies {
+        background-image: url(../../assets/movies.svg) !important;
+      }
     }
 }

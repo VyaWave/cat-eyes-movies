@@ -5,12 +5,15 @@
     <router-view></router-view>
     <div class="navigator" v-show="shouldShow">
       <router-link tag="div" to="/movies" class="nav-item">
+        <span class="icon movies"></span>
         <a>电影</a>
       </router-link>
       <router-link tag="div" to="/cinemas" class="nav-item">
+        <span class="icon cinemas "></span>
         <a>影院</a>
       </router-link>
       <router-link tag="div" to="/profile" class="nav-item">
+         <span class="icon me"></span>
         <a>我的</a>
       </router-link>
     </div>

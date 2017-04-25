@@ -9,7 +9,6 @@ import './style.scss'
 export default class MovieDetail extends BaseView {
 
   created () {
-    console.log(this.defaultHeader)
     this.headerConfig = { title: '影片详情' }
   }
 }

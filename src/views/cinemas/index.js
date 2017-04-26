@@ -2,6 +2,7 @@ import Component from 'vue-class-component'
 import{ BaseView } from '../base.view'
 import { cinemas } from './mock.ciemas'
 import { GodService } from '../../service/godService'
+import { sort } from '../../utils/sort'
 import { LoadingIndicator } from '../../components/loading-indicator/index'
 import './style.scss'
 
@@ -18,7 +19,6 @@ export default class CinemasView extends BaseView {
 
   created () {
     this.isLoading = true
-    // this.cinemas = cinemas.data.浦东新区
     this.headerConfig = {title:'影院'}
     this.godService = new GodService()
     this.getCinemasDta()

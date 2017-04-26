@@ -71,6 +71,9 @@
       flex-direction: row;
       background: #fff;
       border-bottom: 1px solid #e5e5e5;
+      &:last-child {
+        padding-bottom: 20px;
+      }
       & .first-line {
         font-size: 16px;
         font-weight: 800;

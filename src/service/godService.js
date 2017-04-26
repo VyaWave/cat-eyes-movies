@@ -4,6 +4,7 @@
  * @extends {fetch}
  */
 import { Observable } from 'rxjs'
+import { sort } from '../utils/sort'
 
 export class GodService {
 
@@ -35,6 +36,13 @@ export class GodService {
             _data.push(i)
           })
         }
+        // 排序根据距离
+        for (let i in _data) {
+          _data[i].distance = Math.ceil(Math.random() * 1000 * 10)
+        }
+        _data = sort(_data, (left, right) => {
+          return left.distance < right.distance
+        })
         return _data
       })
       .catch(err => {

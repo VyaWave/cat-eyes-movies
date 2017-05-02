@@ -5,7 +5,7 @@
       <div class="caption">
         当前城市
       </div>
-      <div class="location-item city-item" @click="select(location)">
+      <div class="location-item city-item pointer" @click="select(location)">
         {{location.name}}
       </div>
     </div>
@@ -14,7 +14,7 @@
         最近访问的城市
       </div>
       <div class="wrap city-block">
-        <span class="reccent-item city-item ellicaps">上海</span>
+        <span class="reccent-item city-item ellicaps pointer">上海</span>
       </div>
     </div>
     <div class="hot-city">
@@ -23,14 +23,14 @@
           热门城市
         </div>
         <div class="wrap city-block">
-          <span class="city-item ellicaps" v-for="item in hotcities"
+          <span class="city-item ellicaps pointer" v-for="item in hotcities"
             @click="select(item)">{{item.name}}</span>
         </div>
       </div>
     </div>
     <div class="all-city">
       <div class="wrap-wrap">
-        <div class="item" v-for="caption in captionCity">
+        <div class="item pointer" v-for="caption in captionCity">
           <div class="caption">
           {{caption}}
           </div>

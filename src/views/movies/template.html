@@ -5,19 +5,19 @@
       {{location.name}}
     </router-link>
     <div class="category">
-      <span class="types active">
+      <span class="types active pointer">
         <span class="name">热映</span>
       </span>
-      <span class="types">
+      <span class="types pointer">
         待映
       </span>
     </div>
-    <div class="search"><i class="el-icon-search"></i></div>
+    <div class="search pointer"><i class="el-icon-search"></i></div>
   </div>
   <!--电影列表-->
   <loading-indicator v-if="isLoading"></loading-indicator>
   <div class="movies-list" v-else>
-    <router-link tag="div" to="/movies/movie-detail" class="movie-item" v-for="movieItem in movies"
+    <router-link tag="div" to="/movies/movie-detail" class="movie-item pointer" v-for="movieItem in movies"
       :key="movieItem.nm">
       <div class="left" @click.stop="playIt">
         <img :src="movieItem.img"/>

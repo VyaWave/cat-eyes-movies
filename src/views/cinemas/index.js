@@ -29,7 +29,7 @@ export default class CinemasView extends BaseView {
       .distinctUntilChanged()
       .subscribe(cinemas => {
         console.info('影院数据已更新')
-        this.cinemas = cinemas
+        this.cinemas = cinemas.filter(r => r.distance > 50)
         this.isLoading = false
       })
   }

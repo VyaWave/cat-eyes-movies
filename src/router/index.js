@@ -7,6 +7,7 @@ import CitiesChooser from '@/views/cities'
 import MovieDetail from '@/views/movie-detail'
 import StartView from '@/views/start'
 import MoviePlayer from '@/views/movie-player'
+import CinemasDetailView from '@/views/cinema-detail'
 
 Vue.use(Router)
 
@@ -50,6 +51,11 @@ export default new Router({
       path: '/movie-player',
       name: 'movie-player',
       component: MoviePlayer
+    },
+    {
+      path: '/cinema-detail',
+      name: 'cinema-detail',
+      component: CinemasDetailView
     }
   ]
 })

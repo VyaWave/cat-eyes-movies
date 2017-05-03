@@ -11,7 +11,7 @@
   </div>
   <loading-indicator v-if="isLoading"></loading-indicator>
   <div class="cinemas-list" v-else>
-    <div class="cinemas-items" v-for="cinemasData in cinemas">
+    <div class="cinemas-items" v-for="cinemasData in cinemas" @click="goToDetail">
       <div class="items-left ">
         <p class="first-line"><span class="name">{{ cinemasData.nm }}</span><span class="price">{{ cinemasData.sellPrice }}</span><span class="start-up">元起</span></p>
         <p class="second-line ellipsis"><span class="address">{{ cinemasData.addr }}</span></p>

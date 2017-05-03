@@ -33,4 +33,11 @@ export default class CinemasView extends BaseView {
         this.isLoading = false
       })
   }
+
+  goToDetail() {
+
+    this.$router.push({
+      name: 'cinema-detail'
+    })
+  }
 }

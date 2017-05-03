@@ -1,7 +1,7 @@
+import { LoadingIndicator } from '../../components/loading-indicator/index'
 import Component from 'vue-class-component'
 import{ BaseView } from '../base.view'
 import './style.scss'
-import { LoadingIndicator } from '../../components/loading-indicator/index'
 
 @Component({
   template: require('./template.html'),
@@ -14,10 +14,10 @@ import { LoadingIndicator } from '../../components/loading-indicator/index'
 export default class CinemasDetailView extends BaseView {
 
   created () {
-     this.headerConfig  = {title: '我的'}
-     this.isLoading = true
-     setTimeout(() => {
-       this.isLoading = false
-     }, 1000 * 0.8)
+    this.isLoading = true
+    this.headerConfig  = {title:'影院详情'}
+    setTimeout(() => {
+      this.isLoading = false
+    }, 1000 * 0.8)
   }
 }

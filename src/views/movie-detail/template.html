@@ -1,5 +1,8 @@
 <section class="movie-detail">
-  <div class="nav">
-    影片详情页
+  <loading-indicator v-if="isLoading"></loading-indicator>
+  <div class="nav" v-else>
+    <h2>
+      影片详情页
+    </h2>
   </div>
 </section>

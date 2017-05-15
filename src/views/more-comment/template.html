@@ -1,0 +1,22 @@
+<section class="more-comment-view">
+  <loading-indicator v-if="isLoading"></loading-indicator>
+  <div class="main-body" v-else>
+    <div class="top">
+      <span class="tit">这里是摔跤吧，爸爸 的评论详情页</span>
+      <span class="score">这是影片的整体评分9.8分</span>
+    </div>
+    <div class="comments">
+      <h2 class="tit">全部评论</h2>
+      <div class="moment-item">
+        <div class="left">
+          用户头像
+        </div>
+        <div class="right">
+          <div class="name">用户名</div>
+          <div class="comment">这里是用户的评论</div>
+          <div class="bottom"><span class="date">评论时间</span><span class="agree">点赞人数</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

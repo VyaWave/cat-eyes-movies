@@ -8,7 +8,7 @@ import MovieDetail from '@/views/movie-detail'
 import StartView from '@/views/start'
 import MoviePlayer from '@/views/movie-player'
 import CinemasDetailView from '@/views/cinema-detail'
-
+import GlobalSerch from '@/views/global-search'
 Vue.use(Router)
 
 export default new Router({
@@ -56,6 +56,11 @@ export default new Router({
       path: '/cinema-detail',
       name: 'cinema-detail',
       component: CinemasDetailView
+    },
+    {
+      path: '/global-serch',
+      name: 'global-serch',
+      component: GlobalSerch
     }
   ]
 })

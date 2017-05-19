@@ -8,7 +8,7 @@ import { sort } from '../utils/sort'
 
 export class GodService {
 
-  getMovies () {
+  getHotMovies () {
     return Observable.fromPromise(fetch('/cat/hotmovies')
       .then((response) => {
         return this.dealResponse(response)
@@ -18,7 +18,7 @@ export class GodService {
         return r.data.movies
       })
       .catch(err => {
-        this.dealError(err, 'movies信息失效')
+        this.dealError(err, 'hotmovies信息失效')
       }))
   }
 

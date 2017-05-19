@@ -12,7 +12,8 @@ import './style.scss'
   template: require('./template.html'),
   data: () => ({
     movies: null,
-    isLoading: Boolean
+    isLoading: Boolean,
+    selectType: String
   }),
   methods: {
     ...mapActions({
@@ -32,6 +33,7 @@ import './style.scss'
 export default class MoviesList extends BaseView {
 
   created () {
+    this.selectType = 'hotMovies'
     this.isLoading = true
     // 电影数据和城市数据
     this.godService = new GodService()
@@ -42,7 +44,8 @@ export default class MoviesList extends BaseView {
   }
 
   getMovies() {
-    this.godService.getMovies()
+
+    this.godService.getHotMovies()
       .distinctUntilChanged()
       .subscribe(movies => {
         console.info('影片数据已更新')

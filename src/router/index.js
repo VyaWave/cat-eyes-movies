@@ -4,11 +4,13 @@ import Profile from '@/views/profile/index'
 import CinemasView from '@/views/cinemas/index'
 import MoviesList from '@/views/movies/index'
 import CitiesChooser from '@/views/cities'
-import MovieDetail from '@/views/movie-detail'
+import MovieDetail from '@/views/movie.detail'
 import StartView from '@/views/start'
-import MoviePlayer from '@/views/movie-player'
-import CinemasDetailView from '@/views/cinema-detail'
-import GlobalSerch from '@/views/global-search'
+import MoviePlayer from '@/views/movie.player'
+import CinemasDetailView from '@/views/cinema.detail'
+import GlobalSerch from '@/views/global.search'
+import MoreComment from '@/views/comments.more'
+import MyOrders from '@/views/profile.order'
 Vue.use(Router)
 
 export default new Router({
@@ -61,6 +63,16 @@ export default new Router({
       path: '/global-serch',
       name: 'global-serch',
       component: GlobalSerch
+    },
+    {
+      path: '/more-comments',
+      name: 'more-comments',
+      component: MoreComment
+    },
+    {
+      path: '/my-orders',
+      name: 'my-orders',
+      compeonent: MyOrders
     }
   ]
 })

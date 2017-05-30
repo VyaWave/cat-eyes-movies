@@ -2001,6 +2001,10 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
+dplayer@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/dplayer/-/dplayer-1.1.4.tgz#5ec5a143855dec6f24ddcd28731a721fb4b909f4"
+
 draftlog@^1.0.10:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/draftlog/-/draftlog-1.0.12.tgz#7db6a3c5b62106bb32dd4a35d67bcccb6c7d9da0"
@@ -5546,9 +5550,9 @@ rx-lite@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-3.1.2.tgz#19ce502ca572665f3b647b10939f97fd1615f102"
 
-rxjs@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.3.0.tgz#d88ccbdd46af290cbdb97d5d8055e52453fabe2d"
+rxjs@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.4.0.tgz#a7db14ab157f9d7aac6a56e655e7a3860d39bf26"
   dependencies:
     symbol-observable "^1.0.1"
 
@@ -6497,6 +6501,17 @@ void-elements@^2.0.0:
 vue-class-component@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-5.0.1.tgz#feda06c3da266cee9064e224ba491e089923dce8"
+
+vue-dplayer@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/vue-dplayer/-/vue-dplayer-0.0.1.tgz#b34573c19f822922aaa4b8d7ab4ea64b1239dd5f"
+  dependencies:
+    dplayer "^1.1.4"
+    vue-github-badge "^1.0.0"
+
+vue-github-badge@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-github-badge/-/vue-github-badge-1.0.0.tgz#1109a8833d5a2e69d88202cfd01d4841829418b9"
 
 vue-hot-reload-api@^2.0.11:
   version "2.0.11"

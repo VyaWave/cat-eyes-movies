@@ -7,7 +7,7 @@ const moviesListVuex = {
   },
   mutations: {
     [getMovieList] (state, data) {
-      console.log('data', data.data)
+      //console.log('data', data.data)
       state.test = data.data
     },
     [getLoadStatus] (state, status) {

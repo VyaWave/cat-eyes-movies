@@ -14,7 +14,6 @@ import { LoadingIndicator } from '../../components/loading-indicator/index'
 export default class MyOrders extends BaseView {
 
   created () {
-    console.log('222')
      this.headerConfig  = {title: '我的订单'}
      this.isLoading = true
      setTimeout(() => {

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+// import ensure from '../utils/lazy'
 import Profile from '@/views/profile/index'
 import CinemasView from '@/views/cinemas/index'
 import MoviesList from '@/views/movies/index'
@@ -11,6 +12,7 @@ import CinemasDetailView from '@/views/cinema.detail'
 import GlobalSerch from '@/views/global.search'
 import MoreComment from '@/views/comments.more'
 import MyOrders from '@/views/profile.order'
+// const StartView = ensure(System.import('@/views/start'), 'StartView')
 Vue.use(Router)
 
 export default new Router({

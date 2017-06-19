@@ -20,4 +20,8 @@ export default class CinemasView extends BaseView {
        this.isLoading = false
      }, 1000 * 0.8)
   }
+
+  upload() {
+    console.info('upload..')
+  }
 }

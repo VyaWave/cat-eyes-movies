@@ -1,4 +1,5 @@
 
+// 给予fetch封装的api类
 export class baseService extends fetch {
 
   getMovies() {

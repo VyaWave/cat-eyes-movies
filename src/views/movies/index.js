@@ -33,6 +33,7 @@ import './style.scss'
 export default class MoviesList extends BaseView {
 
   created () {
+    console.log('22')
     this.selectType = 'hotMovies'
     this.isLoading = true
     // 电影数据和城市数据

@@ -12,7 +12,17 @@ import CinemasDetailView from '@/views/cinema.detail'
 import GlobalSerch from '@/views/global.search'
 import MoreComment from '@/views/comments.more'
 import MyOrders from '@/views/profile.order'
-// const StartView = ensure(System.import('@/views/start'), 'StartView')
+// const MoviesList = ensure(System.import('@/views/movies/index'), 'MoviesList')
+// const MoviesList = () => System.import('@/views/movies/index')
+
+// const MoviesList = (resolve) => {
+//   System.import('../views/movies/index')
+//     .then(r => resolve(r['MoviesList'], console.info(r)))
+// }
+// const MoviesList = resolve => require(['@/views/movies/index'], resolve)
+
+console.info(MoviesList)
+
 Vue.use(Router)
 
 export default new Router({

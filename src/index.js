@@ -10,7 +10,7 @@ import { VueRx } from './mixins/rx'
 import VueDPlayer from 'vue-dplayer'
 import './directives'
 // import { LoadingIndicator } from './components/loading-indicator/index'
-require('./styles/main.scss')
+import './styles/main.scss'
 // 样式单独引入
 import 'element-ui/lib/theme-default/index.css'
 

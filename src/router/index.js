@@ -3,7 +3,7 @@ import Router from 'vue-router'
 // import ensure from '../utils/lazy'
 import Profile from '@/views/profile/index'
 import CinemasView from '@/views/cinemas/index'
-import MoviesList from '@/views/movies/index'
+// import MoviesList from '@/views/movies/index'
 import CitiesChooser from '@/views/cities'
 import MovieDetail from '@/views/movie.detail'
 import StartView from '@/views/start'
@@ -13,7 +13,7 @@ import GlobalSerch from '@/views/global.search'
 import MoreComment from '@/views/comments.more'
 import MyOrders from '@/views/profile.order'
 // const MoviesList = ensure(System.import('@/views/movies/index'), 'MoviesList')
-// const MoviesList = () => System.import('@/views/movies/index')
+const MoviesList = () => require('@/views/movies/index')
 
 // const MoviesList = (resolve) => {
 //   System.import('../views/movies/index')
